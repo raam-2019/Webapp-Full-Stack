@@ -1,0 +1,31 @@
+{
+  "name": "RAAMFS",
+  "version": "1.0.0",
+  "description": "Full Stack enviornment for the RAAM project.",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^4.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "mysql": "^2.16.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "client-install": "cd client && npm install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/raam-2019/Full-Stack"
+  },
+  "author": "Andrew Geng",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raam-2019/Full-Stack"
+  },
+  "homepage": "https://github.com/raam-2019/Full-Stack#readme"
+}
