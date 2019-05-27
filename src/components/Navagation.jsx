@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ItemModal from "../components/ItemModals Components/itemModal";
 import {
   Row
 } from 'reactstrap';
@@ -16,10 +17,15 @@ class Navagation extends Component {
                       <span /> <span /> <span />
                     </button>
                   </li>
+                  <li className="nav-item active" style={{marginLeft: "1rem"}}>
+                    <a className="index-title" href="https://www.google.com">
+                      Race Across America
+                    </a>
+                  </li>
                 </ul>
-                <ul className="nav navbar-nav" style={{float: "right"}}>
-                  <li style={{ display: "inline" }}>
-                    <div>SOmething</div>
+                <ul className="nav navbar-nav">
+                  <li style={{ display: "inline", float: "right" }}>
+                    <ItemModal />
                   </li>
                 </ul>
               </div>

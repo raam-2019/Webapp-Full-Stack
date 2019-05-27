@@ -67,7 +67,7 @@ class Sidebar extends Component {
               style={this.state}
               id="dropDown"
             >
-              Favorites
+              Additionals
             </a>
             <Collapse isOpen={this.state.collapse}>
             <ul className="list-unstyled">

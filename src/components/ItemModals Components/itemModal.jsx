@@ -14,11 +14,6 @@ import {
 class itemModal extends Component {
   state = {
     modal: false,
-    name: "",
-    school: "",
-    work: "",
-    song: "",
-    info: ""
   };
 
   toggle = () => {
@@ -49,14 +44,7 @@ class itemModal extends Component {
 
   onSubmit = e => {
     e.preventDefault();
-    let myData = {
-        name: "Hello World",
-        school: "UWW",
-        work: "UWW",
-        song: "cool",
-        info: "awesome"
-    };
-    console.log(myData);
+    console.log();
     //this.props.addToCSV(myData);
     //this.props.addInfoToDB(myData);
     this.toggle();
@@ -66,10 +54,10 @@ class itemModal extends Component {
     return (
       <React.Fragment>
         <a className="nav-link" onClick={this.toggle}>
-          Survey
+          Feedback
         </a>
         <Modal isOpen={this.state.modal} toggle={this.toggle}>
-          <ModalHeader toggle={this.toggle}>New Survey</ModalHeader>
+          <ModalHeader toggle={this.toggle}>RAAM Feedback</ModalHeader>
           <ModalBody>
             <Form onSubmit={this.onSubmit}>
               <FormGroup>
@@ -77,14 +65,14 @@ class itemModal extends Component {
                   type="text"
                   name="name"
                   id="item"
-                  placeholder="What's Your Name"
+                  placeholder="Your name"
                   onChange={this.onChangeName}
                 />
                 <Input
                   type="text"
                   name="school"
                   id="item"
-                  placeHolder="Where did you go to School?"
+                  placeHolder="What did you like?"
                   onChange={this.onChangeSchool}
                   style={{ marginTop: "10px" }}
                 />
@@ -92,7 +80,7 @@ class itemModal extends Component {
                   type="test"
                   name="work"
                   id="item"
-                  placeHolder="Where do you work?"
+                  placeHolder="What did you dislike?"
                   onChange={this.onChangeWork}
                   style={{ marginTop: "10px" }}
                 />
@@ -100,7 +88,7 @@ class itemModal extends Component {
                   type="test"
                   name="song"
                   id="item"
-                  placeHolder="What song's currently stuck in your head?"
+                  placeHolder="How can we improve?"
                   onChange={this.onChangeSong}
                   style={{ marginTop: "10px" }}
                 />
@@ -108,7 +96,7 @@ class itemModal extends Component {
                   type="test"
                   name="info"
                   id="item"
-                  placeHolder="What brought you to my Website?"
+                  placeHolder="Contact Information"
                   onChange={this.onChangeInfo}
                   style={{ marginTop: "10px" }}
                 />
