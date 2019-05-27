@@ -4,11 +4,13 @@ import "bootstrap/dist/js/bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../css/stylesheet.css";
 
+//6890ff
+  //3c70ff dark
 class Sidebar extends Component {
   constructor(props) {
     super(props);
     this.toggle = this.toggle.bind(this);
-    this.state = { collapse: false, background: "#eb6864" };
+    this.state = { collapse: false, background: "#5d67ec" };
   }
 
   ReloadWindow = e => {
@@ -20,9 +22,9 @@ class Sidebar extends Component {
 
   toggle() {
     if (this.state.collapse) {
-      this.setState({ background: "#eb6864" });
+      this.setState({ background: "#5d67ec" });
     } else {
-      this.setState({ background: "#ec4f5f" });
+      this.setState({ background: "#8189ff" });
     }
     this.setState({ collapse: !this.state.collapse });
   }
@@ -31,7 +33,7 @@ class Sidebar extends Component {
     return (
       <nav id="sidebar">
         <div className="sidebar-header">
-          <h3>Sponsors</h3>
+          <h3>Special Thanks to the following Sponsors!</h3>
         </div>
         <ul className="list-unstyled components">
           <li>

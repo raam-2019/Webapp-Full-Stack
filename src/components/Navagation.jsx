@@ -8,7 +8,7 @@ class Navagation extends Component {
     render() { 
         return (
           <Row>
-            <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{width: "100%"}}>
+            <nav className="navbar navbar-expand-lg" style={{width: "100%"}}>
               <div className="container-fluid">
                 <ul className="nav navbar-nav" style={{float: "left"}}>
                   <li style={{ display: "inline" }}>

@@ -6,6 +6,16 @@ a.underLine{
     color: inherit; text-decoration: none; border-bottom: 1px solid black; outline: none;
   }
   
+  #mapboxCommands{
+    background: whitesmoke;
+    color: black;
+  }
+
+  #mapboxCommands:hover{
+    background: gray;
+    color: white;
+  }
+
   #body{
     height:100%;
     padding-bottom: 30px;
@@ -42,8 +52,8 @@ a.underLine{
   #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #eb6864;
-    color: #fff;
+    background: #5d67ec;
+    color: gray;
     transition: all o.6s cubic-bezier(0.945, 0.02, 0.27, 0.665);
     transform-origin: center left;
     min-height: 100vh;
@@ -190,6 +200,7 @@ a.underLine{
     padding: 20px;
     min-height: 100vh;
     transition: all 0.3s;
+    background: linear-gradient(whitesmoke, white);
   }
   
   .navbar-btn {
@@ -200,19 +211,20 @@ a.underLine{
   }
   
   #sidebar {
-    background: #eb6864;
-    color: #fff;
+    background: #5d67ec;
+    color: mintcream;
     transition: all 0.3s;
   }
   
   #sidebar .sidebar-header {
     padding: 20px;
-    background: #eb6864;
+    padding-bottom: 0px;
+    background: #5d67ec;
   }
   
   #sidebar ul.components {
     padding: 20px 0;
-    border-bottom: 1px solid #eb6864;
+    border-bottom: 1px solid #5d67ec;
   }
   
   #sidebar ul p {
@@ -227,19 +239,19 @@ a.underLine{
   }
   
   #sidebar ul li a:hover {
-    color: #ec4f5f;
-    background: #fff;
+    color: #5d67ec;
+    background: mintcream;
   }
   
   #sidebar ul li.active > a,
   a[aria-expanded="true"] {
-    color: #fff;
-    background: #ec4f5f;
+    color: mintcream;
+    background: #5d67ec;
   }
   ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #ec4f5f;
+    background: #8189ff;
   }
   
   ul ul a.underLine {

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Navagation from "../Navagation";
-import { Container } from "reactstrap";
+import "../../css/stylesheet.css";
+import { Container, Button, ListGroup, ListGroupItem } from "reactstrap";
 // import React from 'react'
 import ReactMapGL, { Marker, Popup, NavigationControl,LinearInterpolator, FlyToInterpolator } from 'react-map-gl';
 // import ReactMapGL from 'react-map-gl';
@@ -51,8 +52,9 @@ class Mapboxmain extends React.Component {
     render() {
         return (
             <div id="mainWrapper">
-                <Container className="d-flex flex-wrap justify-content-left align-items-center align-content-center">
-                    <ReactMapGL mapboxApiAccessToken={TOKEN}
+                <Container className="d-flex flex-wrap justify-content-left align-items-center align-content-center" style={{width:"100%"}}>
+                    <ReactMapGL style={{width: "70%"}}
+                        mapboxApiAccessToken={TOKEN}
                         mapStyle="mapbox://styles/mislam5/cjuiyejbm6qn11gnv0e44i7qm"
                         {...this.state.viewport} onViewportChange={this._onViewportChange}
                      >
@@ -60,7 +62,20 @@ class Mapboxmain extends React.Component {
                             <NavigationControl onViewportChange={(viewport) => this.setState({ viewport })}  />   
                         </div>
                     </ReactMapGL>
-                    <button onClick={this._goToCyclist}>Cyclist</button>
+                    <ListGroup style={{marginLeft: "1rem", width:"20%"}}>
+                        <ListGroupItem id="mapboxCommands" tag="a" onClick={this._goToCyclist} action>
+                            Cyclist
+                        </ListGroupItem>
+                        <ListGroupItem id="mapboxCommands" tag="a" onClick={this._goToCyclist} action>
+                            Cyclist
+                        </ListGroupItem>
+                        <ListGroupItem id="mapboxCommands" tag="a" onClick={this._goToCyclist} action>
+                            Cyclist
+                        </ListGroupItem>
+                        <ListGroupItem id="mapboxCommands" tag="a" onClick={this._goToCyclist} action>
+                            Cyclist
+                        </ListGroupItem>
+                    </ListGroup>
                 </Container>
             </div>
         );
