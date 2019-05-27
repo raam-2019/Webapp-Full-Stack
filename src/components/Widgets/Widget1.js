@@ -2,6 +2,14 @@ import React, { Component } from 'react';
 import "../../css/widget.css";
 import Loading from './Loading';
 import picasso from "picasso.js";
+import QdtComponent from "../QdtComponent";
+
+const test = {
+    type: 'QdtPicasso',
+    props: {
+      type: 'lineChart', cols: ['Date.autoCalendar.YearMonth', '=Sum([Number of New Cases])'], height: 300,
+    }
+  };
 
 const placeHolder = {
     element: document.querySelector('#container'), // container must have a width and height specified
@@ -59,7 +67,7 @@ class Widget1 extends Component {
     render(){  
         return (
             <div style={this.spanStyles} className="Widget1">
-                {picasso.chart(placeHolder)}
+                <QdtComponent type={test.type} props={test.props} />
             </div>
         );
     }

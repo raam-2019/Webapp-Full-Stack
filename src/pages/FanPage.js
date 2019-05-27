@@ -8,7 +8,7 @@ import "../css/stylesheet.css";
 
 import MapBoxmain from "../components/MapBox Components/Mapboxmain";
 import Widget from "../components/Widgets/Widget";
-import Widget1 from "../components/Widgets/Widget1";
+import { Widget2 } from "../components/Widgets/Widget2";
 import Footer from "../components/Footer";
 import Navagation from "../components/Navagation";
 import Sidebar from "../components/Sidebar2";
@@ -63,7 +63,7 @@ class FanPage extends Component {
                         <Widget data={this.state} heading="Some graph shit" colspan={2} rowspan={2}/>
                         <Widget data={this.state} heading="Some more stat"/>
                         <Widget data={this.state} heading="ThisAndThat"/>
-                        <Widget1 />
+                        {/* <Widget2 /> */}
                     </Container>
                     <Footer />
                 </div>
