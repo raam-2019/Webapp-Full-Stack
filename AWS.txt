@@ -1,12 +1,5 @@
 AWS IAM 
 
-access key ID: AKIA54QI3DX6UIZ5YESD
-Secret acccess key: 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
-
-IAM user name: raam-webapp
-Password: raam2019
-Account Alias or id: 954575035901
-
 
 Requirements:
 node version: > 9.10.0
