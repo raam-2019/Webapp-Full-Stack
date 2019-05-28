@@ -1,5 +1,3 @@
-AWS IAM 
-
 
 Requirements:
 node version: > 9.10.0
