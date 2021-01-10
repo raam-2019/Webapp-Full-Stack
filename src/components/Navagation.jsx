@@ -24,7 +24,12 @@ class Navagation extends Component {
                   </li>
                 </ul>
                 <ul className="nav navbar-nav">
-                  <li style={{ display: "inline", float: "right" }}>
+                  <li className="nav-items"><a className="nav-link">Features</a></li>
+                  <li className="nav-items"><a className="nav-link">About</a></li>
+                  <li className="nav-items"><a className="nav-link">Testimonials</a></li>
+                  <li className="nav-items"><a className="nav-link">Download</a></li>
+                  <li className="nav-items"><a className="nav-link" href="/Events">Events</a></li>
+                  <li className="nav-items" style={{ display: "inline", float: "right" }}>
                     <ItemModal />
                   </li>
                 </ul>
